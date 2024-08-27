@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GlobalTicket.TicketManagement.Application
+namespace GlobalTicket.TicketManagement.Application.Contracts
 {
-    public interface ICategoryRepository : IAsyncRepository<Category>
+    public interface IOrderRepository : IAsyncRepository<Order>
     {
     }
 }

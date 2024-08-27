@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GlobalTicket.TicketManagement.Application
+namespace GlobalTicket.TicketManagement.Application.Contracts
 {
-    public interface IAsyncRepository <T> where T : class
+    public interface IAsyncRepository<T> where T : class
     {
         Task<T> GetByIdAsync(Guid id);
         Task<IReadOnlyList<T>> GetAllAsync();
