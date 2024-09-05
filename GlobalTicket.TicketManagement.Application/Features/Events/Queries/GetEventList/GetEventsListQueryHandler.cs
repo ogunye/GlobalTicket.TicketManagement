@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using GlobalTicket.TicketManagement.Application.Contracts;
+using GlobalTicket.TicketManagement.Application.Contracts.Persistence;
 using GlobalTicket.TicketManagement.Domain.Entites;
 using MediatR;
 using System;
@@ -23,6 +23,7 @@ namespace GlobalTicket.TicketManagement.Application.Features.Events.Queries.GetE
         public async Task<List<EventListVm>> Handle(GetEventsListQuery request, CancellationToken cancellationToken)
         {
             var allEvents = (await _eventRepository.GetAllAsync()).OrderBy(x => x.EventDate);
+            
             return _mapper.Map<List<EventListVm>>(allEvents);
         }
     }

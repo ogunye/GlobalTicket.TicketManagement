@@ -18,7 +18,6 @@
 
   <ItemGroup>
     <Folder Include="Features\Events\Commands\" />
-    <Folder Include="Features\Events\Queries\GetEventDetail\" />
   </ItemGroup>
 
 </Project>

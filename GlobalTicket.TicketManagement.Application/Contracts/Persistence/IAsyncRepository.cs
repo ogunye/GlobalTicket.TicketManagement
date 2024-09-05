@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GlobalTicket.TicketManagement.Application.Contracts
+namespace GlobalTicket.TicketManagement.Application.Contracts.Persistence
 {
     public interface IAsyncRepository<T> where T : class
     {
