@@ -13,7 +13,7 @@ namespace GlobalTicket.TicketManagement.Application.Features.Events.Commands.Cre
         public Guid CategoryId { get; set; }
         public override string ToString()
         {
-            return $"Event name: {Name}; Price: {Price}; By: {Artist}; On: {Date.ToShortDateString()}; Description: {Description}";
+            return $"Event name: {Name}; Price: {Price}; By: {Artist}; On: {EventDate.ToShortDateString()}; Description: {Description}";
         }
     }
 }

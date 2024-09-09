@@ -20,4 +20,4 @@ namespace GlobalTicket.TicketManagement.Application.Features.Events.Queries.GetE
     }
 
 }
-}
+

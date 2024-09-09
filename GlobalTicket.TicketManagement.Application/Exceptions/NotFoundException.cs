@@ -10,4 +10,5 @@ namespace GlobalTicket.TicketManagement.Application.Exceptions
     {
         public NotFoundException(string name, object key)
             : base($"{name} ({key}) is not found") { }
+    }
 }
