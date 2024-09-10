@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using GlobalTicket.TicketManagement.Application.Features.Events.Commands.CreateEvent;
+using GlobalTicket.TicketManagement.Application.Features.Events.Commands.UpdateEvent;
 using GlobalTicket.TicketManagement.Application.Features.Events.Queries.GetEventDetail;
 using GlobalTicket.TicketManagement.Application.Features.Events.Queries.GetEventList;
 using GlobalTicket.TicketManagement.Domain.Entites;
@@ -15,7 +17,10 @@ namespace GlobalTicket.TicketManagement.Application.Profiles
         public MappingProfile()
         {
             CreateMap<Event, EventListVm>().ReverseMap();
+            CreateMap<Event, CreateEventCommand>().ReverseMap();
+            CreateMap<Event, UpdateEventCommand>().ReverseMap();
             CreateMap<Event, EventDetailVm>().ReverseMap();
+
         }
     }
 }
